@@ -105,3 +105,142 @@ body {
   .login-form .action button:nth-child(2):hover {
     background: #3c4d6d;
   }
+
+  /* -----------------------NAV BAR----------------------------- */
+/* ------------------------------------------------------------------- */
+
+.header {
+  background-color: white;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  padding:1%;
+
+}
+.logo {
+width: 3vw;
+align-items: center;
+
+
+}
+.shop{
+display:flex;
+color:black;
+position:relative;
+right:10vw;
+font-weight: bold;
+font-size:2vw;
+text-decoration: none;
+}
+.searchform {
+display:flex;
+position: relative;
+right: 8vw;
+
+}
+.input{
+border:none;
+width:1000vw;
+outline:none;
+border-radius:1%;
+padding:10px;
+}
+.icons .fa{
+color:black;
+text-decoration:none;
+font-size:2vw;
+padding: 5%;
+padding-right: 3%;
+}
+.icons{
+text-align:right;
+}
+.searchbar{
+width:40vw;
+font-size: 1vw;
+font-weight: bold;
+}
+.fa-search{
+color:black;
+text-decoration:none;
+font-size:2vw;
+padding-right: 3%;
+padding-left: 1%;
+text-align:right;
+}
+.fa-search::before{
+font-size:2vw;
+}
+
+
+
+/* -----------------------FOOTER--------------------------- */
+/* ------------------------------------------------------------------- */
+
+.footer{
+margin-top:8vw;
+width: 100%;
+padding:5vw 15vw;
+background-color: #333;
+color:#efefef;
+display:flex;
+}
+
+.footer div{
+text-align: center;
+
+}
+.col-2{
+flex-grow: 2;
+}
+.footer div h3{
+font-weight: 300;
+margin-bottom:1vw;
+letter-spacing: 1px;
+}
+.col-1 a{
+display: block;
+text-decoration: none;
+color: #efefef;
+margin-bottom: 1vw;
+}
+#form2 input{
+width: 21vw;
+height: 2vw;
+border-radius:4px;
+text-align: center;
+margin-top: 1vw;
+margin-bottom: 2vw;
+outline: none;
+border: none;
+font-size: 1vw;
+
+}
+
+#form2 button{
+background:transparent;
+border: 2px solid #fff;
+color:#fff;
+border-radius: 2vw;
+padding: 1vw 2vw;
+font-size: 1vw;
+cursor: pointer;
+}
+
+.social-icons{
+margin-top:2vw ;
+}
+
+.social-icons i{
+font-size: 2vw;
+margin: 1vw;
+cursor:pointer;
+}
+.titles{
+font-size: 1vw;
+}
+.info{
+font-size: 1vw;
+}
+
+
