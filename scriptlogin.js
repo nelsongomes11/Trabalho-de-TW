@@ -45,10 +45,6 @@ function isPasswordValid() {
     return true;
 }
 
-function validateEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-}
-
 const form = {
     email: () => document.getElementById("email"),
     emailInvalidError: () => document.getElementById("email-invalid-error"),
