@@ -41,16 +41,21 @@
       <h1>Login</h1>
       <div class="content">
         <div class="input-field">
-          <input type="email" placeholder="Email" autocomplete="nope">
+          <input type="email" onchange="onChangeEmail()" placeholder="Email" id="email" autocomplete="nope">
+          <div class="error" id="email-required-error">Email is required</div>
+          <div class="error" id="email-invalid-error">Email is invalid</div>
         </div>
         <div class="input-field">
-          <input type="password" placeholder="Password" autocomplete="nope">
+          <input type="password" onchange="onChangePassword()" placeholder="Password" id="password" autocomplete="nope">
+          <div class="error" id="password-required-error">Password is required</div>
         </div>
-        <a href="#" class="link">Forgot Your Password?</a>
+        <div class="recover">
+          <button type="button" disabled="true" id="recover-password-button">Recover Password</button>
+        </div>
       </div>
       <div class="action">
-        <button>Register</button>
-        <button>Sign in</button>
+        <button type="button">Register</button>
+        <button type="button" disabled="true" id="login-button">Sign in</button>
       </div>
     </form>
   </div>
@@ -85,5 +90,6 @@
         </div>
 
     </div>
+  <script src="scriptlogin.js"></script>
 </body>
 </html>
