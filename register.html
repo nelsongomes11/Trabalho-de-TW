@@ -9,22 +9,90 @@
 </head>
 <body>
 </div>
+<!-- NAV BAR  -->
+
+<div class="header">
+  <div class="logo">
+      <a href="index.html"><img src="images/logo.png" class="logo"></a>
+      
+  </div>
+  
+      <a href="shop.html" class="shop">SHOP</a>
+  
+  <div class="search">
+      <form class="searchform" id="form1">
+          
+          <input type="text" placeholder="Search" class="searchbar">
+          <a href="#" class="fa fa-search"></a>
+
+          
+          
+      </form>
+  </div>
+  <div class="icons">
+      <a href="#" class="fa fa-heart"></a>
+      <a href="carrinho.html" class="fa fa-shopping-cart"></a>
+      <a href="#" class="fa fa-user"></a>
+      
+  </div>
+</div>
 <div class="login-form">
   <form>
     <h1>Register</h1>
     <div class="content">
       <div class="input-field">
-        <input type="email" placeholder="Email" autocomplete="nope">
+        <input type="email" placeholder="Email" id="email" onchange="onChangeEmail()" autocomplete="none">
+        <div class="error" id="email-required-error">Email is required</div>
+        <div class="error" id="email-invalid-error">Email is invalid</div>
       </div>
       <div class="input-field">
-        <input type="password" placeholder="Password" autocomplete="nope">
+        <input type="password" placeholder="Password" id="password" onchange="onChangePassword()" autocomplete="nope">
+        <div class="error" id="password-required-error">Password is required</div>
+        <div class="error" id="password-min-length-error">Password must have at least 6 characters</div>
       </div>
-      DO YOU HAVE AN ACCOUNT? <a href="./login.html" class="link">Log In Here</a>
+      <div class="input-field">
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" onchange="onChangeConfirmPassword()" autocomplete="none">
+        <div class="error" id="password-doesnt-match-error">Both passwords must be the same</div>
+      </div>
     </div>
     <div class="action">
-      <button>Sign Up</button>
+      <button type="button">Log In</button>
+      <button type="button" disabled="true" id="register-button">Sign Up</button>
     </div>
   </form>
 </div>
+ <!-- FOOTER  -->
+
+ <div class="footer">
+  <div class="col-1">
+      <h3 class="titles">USEFUL LINKS</h3>
+      <a href="#" class="info">Shop</a>
+      <a href="#" class="info">Hoodies</a>
+      <a href="#" class="info">T-Shirts</a>
+      <a href="#" class="info">Bottoms</a>
+      <a href="#" class="info">Sneakers</a>
+  </div>
+  <div class="col-2">
+      <h3  class="titles">NEWSLETTER</h3>
+      <form id="form2">
+          <input type="text" placeholder="Your Email Adress" required>
+          <br>
+          <button type="submit">SUBSCRIBE NOW</button>
+      </form>
+  </div>
+  <div class="col-3">
+      <h3  class="titles">CONTACT</h3>
+      <p class="info">Rua D.Sancho I,981<br>Vila do Conde,Portugal</p>
+      <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-inbox"></i>
+      </div>
+  </div>
+
+</div>
+<script src="scriptregister.js"></script>
+<script src="validations.js"></script>
 </body>
 </html>
