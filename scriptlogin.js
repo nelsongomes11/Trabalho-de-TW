@@ -8,6 +8,10 @@ function onChangePassword() {
     tooglePasswordErrors();
 }
 
+function register() {
+    window.location.href = "register.html";
+}
+
 function isEmailValid() {
     const email = form.email().value;
     if (!email) {
@@ -53,4 +57,16 @@ const form = {
     password: () => document.getElementById("password"),
     passwordRequiredError: () => document.getElementById("password-required-error"),
     recoverPassword: () => document.getElementById("recover-password-button")
+}
+
+function loginPage(form) {
+    if (form.email.value == "sam@email.com") {
+        if (form.password.value == "1234") {
+            window.location.href = "index-logged-in.html";
+        } else {
+            alert("Incorrect Password")
+        }
+    } else {
+        alert("Incorrect Email")
+    }
 }

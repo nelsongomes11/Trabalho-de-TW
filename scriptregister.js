@@ -22,6 +22,10 @@ function onChangeConfirmPassword() {
     toggleRegisterButtonDisable();
 }
 
+function login() {
+    window.location.href = "login.html";
+}
+
 function validatePasswordsMatch() {
     const password = form.password().value;
     const confirmPassword = form.confirmPassword().value;
