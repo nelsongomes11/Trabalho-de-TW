@@ -214,3 +214,12 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+.checkoutbut{
+    width:6vw;
+    height: 3vh;
+    background-color: #fff;
+    border-color: #333;
+    color: #333;
+    border-radius: 0.4rem;
+    
+}
