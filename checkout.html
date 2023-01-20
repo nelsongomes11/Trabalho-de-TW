@@ -8,6 +8,8 @@
     <link rel="stylesheet" href=".\styles\stylescheckout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    
 </head>
 <body>
      <!-- NAV BAR  -->
@@ -18,7 +20,7 @@
             
         </div>
         
-            <a href="hoodies.html" class="shop">SHOP</a>
+            <a href="shop.html" class="shop">SHOP</a>
         
         <div class="search">
             <form class="searchform" id="form1">
@@ -65,19 +67,19 @@
                 </div>
                 <div class="input-line">
                     <label for="name">Card number</label>
-                    <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444" class="checkinput">
+                    <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444" maxlength="16" class="checkinput">
                 </div>
                 <div class="input-container">
                     <div class="input-line">
                         <label for="name">Expiring Date</label>
-                        <input type="text" name="name" id="name" placeholder="02-23" class="checkinput">
+                        <input type="text" name="name" id="name" placeholder="02-23" maxlength="5" class="checkinput">
                     </div>
                     <div class="input-line">
                         <label for="name">CVC</label>
-                        <input type="text" name="name" id="name" placeholder="***" class="checkinput">
+                        <input type="text" name="name" id="name" placeholder="***" maxlength="3" class="checkinput">
                     </div>
                 </div>
-                <input type="button" value="Complete Purchase">
+                <input type="button" value="Complete Purchase" id="checkbutton">
             </form>
         </div>
     </div>
@@ -87,7 +89,7 @@
 <div class="footer">
     <div class="col-1">
         <h3 class="titles">USEFUL LINKS</h3>
-        <a href="hoodies.html" class="info">Shop</a>
+        <a href="shop.html" class="info">Shop</a>
         <a href="hoodies.html" class="info">Hoodies</a>
         <a href="tshirts.html" class="info">T-Shirts</a>
         <a href="bottoms.html" class="info">Bottoms</a>
@@ -113,6 +115,6 @@
     </div>
 
 </div>
-    
+    <script src="checkout.js"></script>
 </body>
 </html>
